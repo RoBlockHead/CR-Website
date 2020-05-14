@@ -415,11 +415,8 @@ a.invert:hover {
     display: table-cell;
     vertical-align: middle;
     /*	color: white;*/
-    width: 39%;
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-bottom: 1em;
+    width: 65%;
+    padding: 1em;
     align-self: center;
 /*	font-weight: bold;*/
 /*	margin: 0;*/

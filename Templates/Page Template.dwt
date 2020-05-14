@@ -62,13 +62,15 @@
 
     <div id="section-header">
         <div class="heading">
-			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">heading1</h2><!-- TemplateEndEditable -->
+			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Heading 1</h2><!-- TemplateEndEditable -->
         </div>
         <div class="image">
             <!-- TemplateBeginEditable name="Heading1Img" --><img src="../images/slide-1.jpg" alt="Image">
             <!-- TemplateEndEditable -->
         </div>
     </div>
+	<!-- TemplateBeginEditable name="body" -->
+	<!-- TemplateEndEditable -->
     <!--
 	<div id="Section1" class="section">
 		<div class="sidebar"><img src="../images/slide-2.jpg" alt="image"></div>
