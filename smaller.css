@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@media (min-width: 965px) and (max-width: 1500px){
+	.top-logo {
+		width: 300px;
+	}
+	
+}
+@media (min-width: 1150px) {
+	.header-nav{
+		font-size: 20px;
+	}
+}
+@media (min-width: 750px) and (max-width: 1150px) {
+	.header-nav {
+		font-size: 13px;
+	}
+}
