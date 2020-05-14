@@ -2,12 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <!-- TemplateBeginEditable name="doctitle" -->
     <title>Untitled Document</title>
     <!-- TemplateEndEditable -->
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
     <link href="../style.css" rel="stylesheet" type="text/css">
     <link href="../smaller.css" rel="stylesheet" type="text/css">
     <link href="../mobile.css" rel="stylesheet" type="text/css">
@@ -61,7 +62,7 @@
 
     <div id="section-header">
         <div class="heading">
-            <h2 style=""><!-- TemplateBeginEditable name="Heading1" -->heading1..................<!-- TemplateEndEditable --></h2>
+			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">heading1</h2><!-- TemplateEndEditable -->
         </div>
         <div class="image">
             <!-- TemplateBeginEditable name="Heading1Img" --><img src="../images/slide-1.jpg" alt="Image">
@@ -109,13 +110,22 @@
         </div>
         <div class="second-bar">
             <div class="container">
-				<img class="logo" src="../images/logo-horiz.png"></img>
-				<h5 class="copyright">&copy; 2020 CircuitRunners Robotics</h5>	
-				<div class="social-icons">
-					<a href="https://www.twitter.com/CircuitRunners" class="twitter invert"><img src="../images/twitter.svg"></a>
-					<a href="https://www.facebook.com/CircuitRunners" class="facebook invert"><img src="../images/facebook.svg"></a>
-					<a href="https://www.youtube.com/CircuitRunners" class="youtube invert"><img src="../images/youtube.svg"></a>
-				</div>              
+				<div class="row">
+				<div class="col-md-4">
+					<img class="logo" src="../images/logo-horiz.png"/>
+				</div>
+				<div class="col-md-4">
+					<h5 class="copyright">&copy; 2020 CircuitRunners Robotics</h5>	
+				</div>
+				<div class="col-md-4">
+					<div class="social-icons">
+						<a href="https://www.twitter.com/CircuitRunners" class="twitter"><img src="../images/twitter.svg" class="invert"></a>
+						<a href="https://www.facebook.com/CircuitRunners" class="facebook"><img src="../images/facebook.svg" class="invert"></a>
+						<a href="https://www.youtube.com/CircuitRunners" class="youtube"><img src="../images/youtube.svg" class="invert"></a>
+					</div>
+					</div>
+				</div>
+				             
             </div>
         </div>
     </footer>

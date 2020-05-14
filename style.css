@@ -348,27 +348,38 @@ h1 {
 
 #Footer .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
     display: table;
     content: " ";
+    margin-left: auto;
 }
-#Footer .second-bar .col-sm-4 .social-icons img {
+#Footer .second-bar .social-icons img {
     height: 40px;
     color: white;
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-#Footer .second-bar .col-sm-4 .social-icons {
-    display: table-cell; 
+#Footer .second-bar .col-md-4 {
+    display: table-cell;
     vertical-align: middle;
-    float: right;
+    width: 33%;
+    align-items: center;
 }
-#Footer .col-sm-4 .social-icons .invert {
+#Footer .second-bar .social-icons {
+    display: table-cell;
+    float: right;
+    margin-right: 10px;
+
+/*
+	display: table-cell;
+    vertical-align: middle;
+*/
+}
+.invert   {
 	filter: invert(1);
 }
-
-#Footer .col-sm-4 a.invert:hover {
+a.invert:hover {
 	filter: invert(.7);
 }
 
@@ -377,16 +388,14 @@ h1 {
 	content: " ";
 }
 #Footer .col-sm-3 {
-	width: 25%;
-	float: left;
-	position: relative;
-	padding-right: inherit;
-	padding-left: inherit;
-	min-height: 1px;
+    width: 25%;
+    float: none;
+    position: static;
+    min-height: 1px;
+    display: table-cell;
 }
-
-#Footer .info {
-    text-align: justify;
+#Footer .col-sm-3 .info {
+    text-align: left;
     color: #afb0b1;
 }
 #Footer ul {
@@ -406,9 +415,12 @@ h1 {
     display: table-cell;
     vertical-align: middle;
     /*	color: white;*/
-    width: 33%;
-    /*	font-size: 28px;*/
-    float: left;
+    width: 39%;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    align-self: center;
 /*	font-weight: bold;*/
 /*	margin: 0;*/
 /*	padding: 15;*/
@@ -430,21 +442,24 @@ h1 {
 	position: absolute;
 }
 #Footer .second-bar a {
-	font-size: 22px;
-	padding: 10px;
-	color: #9fa39;
-	transition: 0.2s;
-	line-height: 68px;
+    color: #9fa39;
+    transition: 0.2s;
 }
 #Footer .second-bar a:hover {
 	text-decoration: none;
 }
 
 #Footer .second-bar .copyright {
-	display: table-cell;
-	vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
+    align-self: center;
+    align-content: center;
 	
 }
+#Footer .col-sm-4 {
+    width: 33vw;
+}
+
 #section-header .heading {
 	background-color: #1F1F1F;
 	-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
@@ -481,6 +496,8 @@ h1 {
 .section {
 	position: relative;
 }
+
+
 
 
 
