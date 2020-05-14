@@ -62,7 +62,7 @@
 
     <div id="section-header">
         <div class="heading">
-			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Heading 1</h2><!-- TemplateEndEditable -->
+			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Heading</h2><!-- TemplateEndEditable -->
         </div>
         <div class="image">
             <!-- TemplateBeginEditable name="Heading1Img" --><img src="../images/slide-1.jpg" alt="Image">
