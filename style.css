@@ -13,11 +13,13 @@
 }
 
 .heading {
-	font-weight: 600;
-	font-size: 36px;
+    font-weight: 600;
+    font-size: 36px;
+    overflow: visible;
 }
 .heading h2 {
-	z-index: 1;
+	position: relative;
+	z-index: 100;
 }
 
 .bottom-center {
@@ -364,7 +366,6 @@ h1 {
     display: table-cell;
     vertical-align: middle;
     width: 33%;
-    align-items: center;
 }
 #Footer .second-bar .social-icons {
     display: table-cell;
@@ -384,8 +385,7 @@ a.invert:hover {
 }
 
 #Footer .row {
-	display: table;
-	content: " ";
+    display: table;
 }
 #Footer .col-sm-3 {
     width: 25%;
@@ -447,10 +447,12 @@ a.invert:hover {
 }
 
 #Footer .second-bar .copyright {
-    display: table-cell;
+    display: inline;
     vertical-align: middle;
-    align-self: center;
     align-content: center;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
 	
 }
 #Footer .col-sm-4 {
@@ -458,20 +460,23 @@ a.invert:hover {
 }
 
 #section-header .heading {
-	background-color: #1F1F1F;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-	width: 50%;
-	height: 150px;
-	position: absolute;
-	z-index: 2;
+    background-color: #1F1F1F;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    width: 50%;
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    overflow: visible;
 }
 #section-header {
-	position: relative;
-	height: 150px;
+    position: relative;
+    height: 150px;
+    overflow: visible;
 }
 #section-header .image  {
 	float: right;
 	height: 150px;
+	
 	overflow: hidden;
 }
 #section-header .image img {
@@ -482,12 +487,14 @@ a.invert:hover {
     margin-bottom: 0;
     float: right;
     filter: opacity(.995);
-    z-index: -1;
+	position:relative;
+    z-index: 1;
 }
 #section-header .heading h2 {
 	margin-left: 25px;
 	margin-bottom: 15em;
-	z-index: 1;
+	position:absolute;
+	z-index: 0;
 	display: block;
 }
 .section {
