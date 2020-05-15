@@ -1,27 +1,13 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/Page Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 
 <head>
     <meta charset="utf-8"> 
-    <!-- InstanceBeginEditable name="doctitle" -->
+    <!-- TemplateBeginEditable name="doctitle" -->
     <title>Untitled Document</title>
-    <!-- InstanceEndEditable -->
-    <!-- InstanceBeginEditable name="head" -->
-     
-    
-    
-    
+    <!-- TemplateEndEditable -->
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
-	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
-<!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
-	<link href="../css/bootstrap-grid.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <link href="../css/smaller.css" rel="stylesheet" type="text/css">
-    <link href="../css/mobile.css" rel="stylesheet" type="text/css">
-	<link href="../css/nav.css" rel="stylesheet">
-	
-<!-- InstanceEndEditable -->
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 <!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="../css/bootstrap-grid.css" rel="stylesheet">
@@ -33,46 +19,6 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="header-inner header-inner-bottom">
-			<div class="bottom-left">
-				<nav class="header-nav header-nav-primary">
-					<a href="./index.html" class="header-nav-item">Home</a>
-					<a href="./sponsors.html" class="header-nav-item">Sponsors</a>
-					<a href="./about.html" class="header-nav-item">About</a>
-				</nav>
-			</div>
-			<div class="bottom-center">
-				<img src="../images/logo-horiz.png" class="top-logo">
-			</div>
-			<div class="bottom-right">
-                    <nav class="header-nav header-nav-secondary">
-						<span class="header-nav-item-folder">
-							<a href="#" class="header-nav-item">Teams</a>
-							<span class="header-nav-folder">
-								<a href="#" class="header-nav-folder-item">FTC 1002</a>
-								<a href="#" class="header-nav-folder-item">FTC 11347</a>
-								<a href="#" class="header-nav-folder-item">FRC</a>
-								<a href="#" class="header-nav-folder-item">GRITS</a>
-							</span>
-						</span>
-						<a href="#" class="header-nav-item">Media</a>
-						<a href="#" class="header-nav-item">Contact</a>
-				</nav>
-            </div>
-		</div>
-	</header>
-	<div id="section-header">
-        <div class="heading">
-			<!-- InstanceBeginEditable name="Heading1" --><h2 style="">Header</h2>
-			<!-- InstanceEndEditable -->
-    	</div>
-      	<div class="image">
-            <!-- InstanceBeginEditable name="Heading1Img" --><img src="../images/slide-1.jpg" alt="Image">
-            <!-- InstanceEndEditable -->
-        </div>
-    </div>
-	<!-- InstanceBeginEditable name="body" -->
 	<header class="header">
 		<div class="header-inner header-inner-bottom">
 			<div class="bottom-left">
@@ -201,70 +147,6 @@
         </div>
     </footer>
 
-<!-- InstanceEndEditable -->
-    
-<!--
-	<div id="Section1" class="section">
-		<div class="sidebar"><img src="../images/slide-2.jpg" alt="image"></div>
-		<div class="content">Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus</div>
-	</div>
--->
-
-    <footer id="Footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-					<h5><b>Quick Links</b></h5>
-                    <ul>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5><b>About</b></h5>
-                    <ul>
-                        <li><a href="#">Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-					<h5><b>Teams</b></h5>
-                    <ul>
-                        <li><a href="#">FRC</a></li>
-                        <li><a href="#">FTC 1002</a></li>
-                        <li><a href="#">FTC 11347</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 info">
-                    <h5><b>Info</b></h5>
-                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                </div>
-            </div>
-        </div>
-        <div class="second-bar">
-            <div class="container">
-				<div class="row">
-				<div class="col-md-4">
-					<img class="logo" src="../images/logo-horiz.png"/>
-				</div>
-				<div class="col-md-4 center-block" style="text-align: center;">
-					<h5 class="copyright">&copy; 2020 CircuitRunners Robotics</h5>	
-				</div>
-				<div class="col-md-4">
-					<div class="social-icons">
-						<a href="https://www.twitter.com/CircuitRunners" class="twitter"><img src="../images/twitter.svg" class="invert"></a>
-						<a href="https://www.facebook.com/CircuitRunners" class="facebook"><img src="../images/facebook.svg" class="invert"></a>
-						<a href="https://www.youtube.com/CircuitRunners" class="youtube"><img src="../images/youtube.svg" class="invert"></a>
-					</div>
-					</div>
-				</div>
-				             
-            </div>
-        </div>
-    </footer>
-
 </body>
 
-<!-- InstanceEnd --></html>
+</html>
