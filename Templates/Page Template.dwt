@@ -1,37 +1,38 @@
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/Page Template.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
     <meta charset="utf-8"> 
-    <!-- TemplateBeginEditable name="doctitle" -->
+    <!-- InstanceBeginEditable name="doctitle" -->
     <title>Untitled Document</title>
-    <!-- TemplateEndEditable -->
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+     
+    
+    
+    
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 <!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="../style.css" rel="stylesheet" type="text/css">
-    <link href="../smaller.css" rel="stylesheet" type="text/css">
-    <link href="../mobile.css" rel="stylesheet" type="text/css">
+	<link href="../css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/smaller.css" rel="stylesheet" type="text/css">
+    <link href="../css/mobile.css" rel="stylesheet" type="text/css">
+	<link href="../css/nav.css" rel="stylesheet">
+	
+<!-- InstanceEndEditable -->
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+<!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="../css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/smaller.css" rel="stylesheet" type="text/css">
+    <link href="../css/mobile.css" rel="stylesheet" type="text/css">
+	<link href="../css/nav.css" rel="stylesheet">
 	
 </head>
 
 <body>
-<!--
-    <header class="header">
-        <div class="header-inner header-inner-bottom">
-            <div class="bottom-left">
-                <nav class="header-nav header-nav-primary"> <a href="#Main" class="header-nav-item">Home</a> <a href="#" class="header-nav-item">Sponsors</a> <a href="#" class="header-nav-item">About</a> </nav>
-            </div>
-            <div class="bottom-center">
-                <a href="index.html"><img src="../images/logo-horiz.png" alt="" class="top-logo" /></a>
-            </div>
-            <div class="bottom-right">
-                <nav class="header-nav header-nav-secondary"> <span class="header-nav-item-folder"> <a href="#" class="header-nav-item">Teams</a> <span class="header-nav-folder"> <a href="#" class="header-nav-folder-item">FTC Black</a> <a href="#" class="header-nav-folder-item">FTC Green</a> <a href="#" class="header-nav-folder-item">FRC</a> <a href="#" class="header-nav-folder-item">GRITS</a> </span> </span> <a href="#" class="header-nav-item">Media</a><a href="#" class="header-nav-item">Contact</a> </nav>
-            </div>
-        </div>
-    </header>
--->
 	<header class="header">
 		<div class="header-inner header-inner-bottom">
 			<div class="bottom-left">
@@ -49,8 +50,8 @@
 						<span class="header-nav-item-folder">
 							<a href="#" class="header-nav-item">Teams</a>
 							<span class="header-nav-folder">
-								<a href="#" class="header-nav-folder-item">FTC Black</a>
-								<a href="#" class="header-nav-folder-item">FTC Green</a>
+								<a href="#" class="header-nav-folder-item">FTC 1002</a>
+								<a href="#" class="header-nav-folder-item">FTC 11347</a>
 								<a href="#" class="header-nav-folder-item">FRC</a>
 								<a href="#" class="header-nav-folder-item">GRITS</a>
 							</span>
@@ -58,13 +59,52 @@
 						<a href="#" class="header-nav-item">Media</a>
 						<a href="#" class="header-nav-item">Contact</a>
 				</nav>
-                </div>
+            </div>
 		</div>
 	</header>
-
 	<div id="section-header">
         <div class="heading">
-			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Heading</h2>
+			<!-- InstanceBeginEditable name="Heading1" --><h2 style="">Header</h2>
+			<!-- InstanceEndEditable -->
+    	</div>
+      	<div class="image">
+            <!-- InstanceBeginEditable name="Heading1Img" --><img src="../images/slide-1.jpg" alt="Image">
+            <!-- InstanceEndEditable -->
+        </div>
+    </div>
+	<!-- InstanceBeginEditable name="body" -->
+	<header class="header">
+		<div class="header-inner header-inner-bottom">
+			<div class="bottom-left">
+				<nav class="header-nav header-nav-primary">
+					<a href="./index.html" class="header-nav-item">Home</a>
+					<a href="./sponsors.html" class="header-nav-item">Sponsors</a>
+					<a href="./about.html" class="header-nav-item">About</a>
+				</nav>
+			</div>
+			<div class="bottom-center">
+				<img src="../images/logo-horiz.png" class="top-logo">
+			</div>
+			<div class="bottom-right">
+                    <nav class="header-nav header-nav-secondary">
+						<span class="header-nav-item-folder">
+							<a href="#" class="header-nav-item">Teams</a>
+							<span class="header-nav-folder">
+								<a href="#" class="header-nav-folder-item">FTC 1002</a>
+								<a href="#" class="header-nav-folder-item">FTC 11347</a>
+								<a href="#" class="header-nav-folder-item">FRC</a>
+								<a href="#" class="header-nav-folder-item">GRITS</a>
+							</span>
+						</span>
+						<a href="#" class="header-nav-item">Media</a>
+						<a href="#" class="header-nav-item">Contact</a>
+				</nav>
+            </div>
+		</div>
+	</header>
+	<div id="section-header">
+        <div class="heading">
+			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Header</h2>
 			<!-- TemplateEndEditable -->
     	</div>
       	<div class="image">
@@ -73,13 +113,39 @@
         </div>
     </div>
 	<!-- TemplateBeginEditable name="body" -->
+	<div id="section-content">
+		<div class="heading">
+			<h3>Section Heading</h3>
+		</div>
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.<br><br>Mauris pellentesque orci vitae magna faucibus fermentum. Nunc ac tellus nisl. Mauris pellentesque, tortor fringilla hendrerit aliquet, dolor justo porta dolor, ac ullamcorper nisi libero ut enim. Donec et rutrum nibh. Praesent nec euismod leo. Suspendisse maximus scelerisque orci, et dictum justo tincidunt nec. Nulla ultrices blandit lacinia. Quisque efficitur, odio id pellentesque cursus, ligula eros rhoncus nisi, nec viverra nulla enim eget arcu. Suspendisse finibus nisi metus, id condimentum neque feugiat at. Vivamus lorem augue, consequat fermentum porta id, vehicula et enim. Etiam non tellus nunc. Cras justo turpis, molestie non enim vitae, cursus efficitur lorem. Curabitur porta mattis lorem, in pharetra mi fringilla et. Pellentesque sem velit, ornare varius ipsum non, gravida elementum eros. Maecenas eu arcu nisi. Pellentesque nibh eros, placerat at quam sit amet, eleifend eleifend augue.<br><b</p>
+		</div>
+	</div>
+	<hr>
+	<div id="section-content">
+		<div class="heading">
+			<h3>Section Heading</h3>
+		</div>
+		<div class="content">
+				<div class="row">
+					<div class="col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="../images/slide-3.jpg" width="100%" alt="image">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- TemplateEndEditable -->
-    <!--
+    
+<!--
 	<div id="Section1" class="section">
 		<div class="sidebar"><img src="../images/slide-2.jpg" alt="image"></div>
 		<div class="content">Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus</div>
 	</div>
 -->
+
     <footer id="Footer">
         <div class="container">
             <div class="row">
@@ -103,8 +169,8 @@
 					<h5><b>Teams</b></h5>
                     <ul>
                         <li><a href="#">FRC</a></li>
-                        <li><a href="#">FTC Green</a></li>
-                        <li><a href="#">FTC Black</a></li>
+                        <li><a href="#">FTC 1002</a></li>
+                        <li><a href="#">FTC 11347</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 info">
@@ -134,6 +200,71 @@
             </div>
         </div>
     </footer>
+
+<!-- InstanceEndEditable -->
+    
+<!--
+	<div id="Section1" class="section">
+		<div class="sidebar"><img src="../images/slide-2.jpg" alt="image"></div>
+		<div class="content">Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus</div>
+	</div>
+-->
+
+    <footer id="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+					<h5><b>Quick Links</b></h5>
+                    <ul>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5><b>About</b></h5>
+                    <ul>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+					<h5><b>Teams</b></h5>
+                    <ul>
+                        <li><a href="#">FRC</a></li>
+                        <li><a href="#">FTC 1002</a></li>
+                        <li><a href="#">FTC 11347</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5><b>Info</b></h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+            <div class="container">
+				<div class="row">
+				<div class="col-md-4">
+					<img class="logo" src="../images/logo-horiz.png"/>
+				</div>
+				<div class="col-md-4 center-block" style="text-align: center;">
+					<h5 class="copyright">&copy; 2020 CircuitRunners Robotics</h5>	
+				</div>
+				<div class="col-md-4">
+					<div class="social-icons">
+						<a href="https://www.twitter.com/CircuitRunners" class="twitter"><img src="../images/twitter.svg" class="invert"></a>
+						<a href="https://www.facebook.com/CircuitRunners" class="facebook"><img src="../images/facebook.svg" class="invert"></a>
+						<a href="https://www.youtube.com/CircuitRunners" class="youtube"><img src="../images/youtube.svg" class="invert"></a>
+					</div>
+					</div>
+				</div>
+				             
+            </div>
+        </div>
+    </footer>
+
 </body>
 
-</html>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,153 @@
+/* CSS Document */
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	width: 100%;
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+.header {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: static;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+	width: 100%;
+	background-color: #111111;
+	padding-bottom: 30px;
+}
+
+.bottom-center {
+	align-self: center;
+	text-align: center;
+	justify-content: center;
+	left: 50%;
+/*	display: table-cell;*/
+}
+.top-logo {
+	width: 25vw;
+}
+.header-inner {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 239px;
+	padding-right: 239px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.header-inner-bottom {
+	padding-top: 40px;
+	min-width: 0;
+	max-width: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	position: relative;
+}
+
+.bottom-left {
+	text-align: left;
+	justify-content: flex-start;
+	-webkit-box-pack: start;
+/*	display: table-cell;*/
+	padding-right: 5%;
+	padding-top: 20px;
+/*	max-width: 37.5vw;*/
+/*	float: left;*/
+}
+
+.header-nav-folder {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 1475;
+	opacity: 0;
+	white-space: nowrap;
+	text-align: left;
+	transform: translate3d(0,10px,0);
+	background-color: white;
+	padding-top: 0.25em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 0.25em;
+	display: inline-block;
+	left: 10px;
+	transition: position linear, opacity 0.2s ease-in-out;
+	top: -9999px;
+}
+
+.header-nav-folder-item {
+	transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+	white-space: nowrap;
+	text-align: left;
+	padding: .382em;
+	display: block;
+	color: black;
+}
+
+.header-nav-folder-item:hover {
+	color: rgba(0,0,0,0.3);
+}
+
+.header-nav-item-folder {
+	position: relative;
+	transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.header-nav-item-folder:hover .header-nav-folder, .header-nav-item {
+	opacity: 1;
+	top: 15px;
+	left: 10px;
+}
+
+.header-nav {
+	white-space: nowrap;
+	line-height: inherit;
+	font-weight: 600;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+/*	font-size: 20px;*/
+}
+.header-nav-item {
+	padding: 0.618em 0;
+	margin: 0 0.618em;
+	display: inline-block;
+	vertical-align: middle;
+	transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+	color: white;
+}
+
+.header-nav-item:hover {
+    color: rgba(255,255,255,.6);
+/*  width: 100px;*/
+/*	padding-bottom: 5em*/
+}
+
+.header-nav-primary {
+	order: 3;
+	-webkit-box-ordinal-group: 3;
+	padding-right: inherit;
+}
+
+.header-nav-secondary {
+	padding-left: inherit;
+	order: 3;
+	-webkit-box-ordinal-group: 3;
+}
+
+.bottom-right {
+	float: right;
+	text-align: right;
+	justify-content: flex-end;
+	-webkit-box-pack: end;
+	padding-left: 5%;
+	padding-top: 20px;
+/*	display: table-cell;*/
+}
