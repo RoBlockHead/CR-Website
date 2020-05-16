@@ -12,10 +12,13 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 <!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="css/bootstrap-grid.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/smaller.css" rel="stylesheet" type="text/css">
-    <link href="css/mobile.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smaller.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
 	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/responses.css" rel="stylesheet">
+<!--	<link href="../scss/custom.css" rel="stylesheet">-->
+	<link href="scss/custom.scss"> <!--This is just to link the scss for ease of development -->
 	
 </head>
 
@@ -24,9 +27,9 @@
 		<div class="header-inner header-inner-bottom">
 			<div class="bottom-left">
 				<nav class="header-nav header-nav-primary">
-					<a href="./index.html" class="header-nav-item">Home</a>
-					<a href="./sponsors.html" class="header-nav-item">Sponsors</a>
-					<a href="./about.html" class="header-nav-item">About</a>
+					<a href="custom.scss/index.html" class="header-nav-item">Home</a>
+					<a href="custom.scss/sponsors.html" class="header-nav-item">Sponsors</a>
+					<a href="custom.scss/about.html" class="header-nav-item">About</a>
 				</nav>
 			</div>
 			<div class="bottom-center">
@@ -49,6 +52,36 @@
             </div>
 		</div>
 	</header>
+	<div class="mobileNav">
+		<div class="mNav-header">
+			<a class="openbtn" href="javascript:void(0);" onclick="toggleNav(this);">
+				<div class="navHamBar bar1"></div>
+				<div class="navHamBar bar2"></div>
+				<div class="navHamBar bar3"></div>
+			</a>
+			<img src="images/logo-horiz.png" class="mNav-top" alt="logo">
+		</div>
+		<nav class="mNav-inner">
+			<ul class="mNav-items">
+				<li class="mNav-item"><a href="#">Home</a></li>
+				<li class="mNav-item"><a href="#">Sponsors</a></li>
+				<li class="mNav-item"><a href="#">About</a></li>
+				<div class="mNav-folder" id="mNav-folder-teams">
+					<li class="mNav-folder-name">
+						<a class="mNav-folder-name" href="javascript:void(0);" onclick="toggleFolder('mNav-folder-teams');">Teams</a>
+					</li>
+					<div class="folder-items hidden">
+						<li class="mNav-folder-item"><a href="#">FTC 1002</a></li>
+						<li class="mNav-folder-item"><a href="#">FTC 11347</a></li>	
+						<li class="mNav-folder-item"><a href="#">FRC 1002</a></li>
+					</div>
+				</div>
+				<li class="mNav-item"><a href="#">Media</a></li>
+				<li class="mNav-item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		
+	</div>
 	<div id="section-header">
         <div class="heading">
 			<!-- InstanceBeginEditable name="Heading1" --><h2 style="">Welcome</h2><!-- InstanceEndEditable -->
@@ -59,26 +92,30 @@
         </div>
     </div>
 	<!-- InstanceBeginEditable name="body" -->
-	<div id="section-content">
+	<div class="section-content">
 		<div class="heading">
 			<h3>Section Heading</h3>
 		</div>
 		<div class="content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.<br><br>Mauris pellentesque orci vitae magna faucibus fermentum. Nunc ac tellus nisl. Mauris pellentesque, tortor fringilla hendrerit aliquet, dolor justo porta dolor, ac ullamcorper nisi libero ut enim. Donec et rutrum nibh. Praesent nec euismod leo. Suspendisse maximus scelerisque orci, et dictum justo tincidunt nec. Nulla ultrices blandit lacinia. Quisque efficitur, odio id pellentesque cursus, ligula eros rhoncus nisi, nec viverra nulla enim eget arcu. Suspendisse finibus nisi metus, id condimentum neque feugiat at. Vivamus lorem augue, consequat fermentum porta id, vehicula et enim. Etiam non tellus nunc. Cras justo turpis, molestie non enim vitae, cursus efficitur lorem. Curabitur porta mattis lorem, in pharetra mi fringilla et. Pellentesque sem velit, ornare varius ipsum non, gravida elementum eros. Maecenas eu arcu nisi. Pellentesque nibh eros, placerat at quam sit amet, eleifend eleifend augue.<br><b</p>
+			<div class="row" >
+				<div class="col-md-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.<br><br>Mauris pellentesque orci vitae magna faucibus fermentum. Nunc ac tellus nisl. Mauris pellentesque, tortor fringilla hendrerit aliquet, dolor justo porta dolor, ac ullamcorper nisi libero ut enim. Donec et rutrum nibh. Praesent nec euismod leo. Suspendisse maximus scelerisque orci, et dictum justo tincidunt nec. Nulla ultrices blandit lacinia. Quisque efficitur, odio id pellentesque cursus, ligula eros rhoncus nisi, nec viverra nulla enim eget arcu. Suspendisse finibus nisi metus, id condimentum neque feugiat at. Vivamus lorem augue, consequat fermentum porta id, vehicula et enim. Etiam non tellus nunc. Cras justo turpis, molestie non enim vitae, cursus efficitur lorem. Curabitur porta mattis lorem, in pharetra mi fringilla et. Pellentesque sem velit, ornare varius ipsum non, gravida elementum eros. Maecenas eu arcu nisi. Pellentesque nibh eros, placerat at quam sit amet, eleifend eleifend augue.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<hr>
-	<div id="section-content">
+	<div class="section-content">
 		<div class="heading">
 			<h3>Section Heading</h3>
 		</div>
 		<div class="content">
 				<div class="row">
 					<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Donec commodo nec felis vel tristique. Proin et fermentum mauris. Integer a congue ante, quis lobortis nisi. Curabitur aliquam turpis quam, eget egestas turpis facilisis a. Maecenas sagittis gravida libero sed accumsan. Donec efficitur faucibus nunc, sed posuere massa molestie vel. Vestibulum et dapibus purus. Morbi tincidunt elit ut ultrices feugiat. Vestibulum sollicitudin efficitur velit, sit amet posuere orci porttitor vitae. Donec sit amet magna ut purus posuere lobortis eu ac enim. Duis eget ligula pellentesque, maximus dui sed, fermentum diam. Pellentesque pharetra leo sed ante interdum accumsan elementum sit amet nunc.</p>
 				</div>
 				<div class="col-md-6">
-					<img src="images/slide-3.jpg" width="100%" alt="image">
+					<img src="/images/slide-3.jpg" width="100%" alt="image">
 				</div>
 			</div>
 		</div>
@@ -146,7 +183,8 @@
             </div>
         </div>
     </footer>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 <!-- InstanceEnd --></html>

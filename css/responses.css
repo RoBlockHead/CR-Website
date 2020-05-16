@@ -5,3 +5,26 @@
 		font-size: 11.5px;
 	}
 }
+
+@media (max-width: 625px) {
+	.header {
+		display: none;
+	}
+	.mobileNav {
+		display: block;
+	}
+	body {
+		font-size: 3vw;
+	}
+}
+@media (min-width: 625px) {
+	.header {
+		display: block;
+	}
+	.mobileNav {
+		display: none;
+	}
+	body {
+		font-size: 16px;
+	}
+}

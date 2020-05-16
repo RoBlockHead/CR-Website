@@ -226,16 +226,18 @@ img .crop {
 h1 {
 	padding-left: 20px;
 }
+/*
 .section-content {
 	padding: 0;
 	background-color: #2C2C2C;
 	margin: 0;
 	position: relative;
 }
-#section-content .heading {
+*/
+.section-content .heading {
 	padding-left: 25px;
 }
-#section-content .content {
+.section-content .content {
 	padding-left: 25px;
 	padding-right:25px;
 	display: block;
@@ -336,7 +338,7 @@ a.invert:hover {
 	width: 100%;
 	text-align: center;
 	display: table;
-	background-color: #141;
+	background-color: #141414;
 	position: absolute;
 }
 #Footer .second-bar a {
@@ -383,12 +385,9 @@ a.invert:hover {
 #section-header .image img {
     display: block;
     width: 75%;
-    margin-top: -254px;
-    margin-right: -77px;
-    margin-bottom: 0;
     float: right;
     filter: opacity(.5);
-	position:relative;
+	position:;
     z-index: 1;
 }
 #section-header .heading h2 {

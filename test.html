@@ -2,70 +2,160 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./css/style.css" rel="stylesheet">
+   		<link href="./css/smaller.css" rel="stylesheet">
+		<link href="./css/mobile.css" rel="stylesheet">
+		<link href="./css/nav.css" rel="stylesheet">
+		<link href="./scss/custom.css" rel="stylesheet">
+		<link href="./scss/custom.scss">
 		<style>
-.overlay {
-	height: 0%;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.9);
-	overflow-y: hidden;
-	transition: 0.5s;}
-.overlay-content {
-	position: relative;
-	top: 25%;
-	width: 100%;
-	text-align: center;
-	margin-top: 30px;}
-.overlay a {
-	padding: 8px;
-	text-decoration: none;
-	font-size: 36px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-.overlay a:hover, .overlay a:focus {
-	color: #f1f1f1;
-}
-.overlay .closebtn {
-	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
-}
+			body {
+				font-family: "Helvetica Neue",Arial,sans-serif;
+				font-size: 3vw;
+			}
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			.mobileNav {
+/*				display: flex;*/
+				text-align: center;
+				width:100%;
+			}
+			.mNav-top {
+				max-width: 50%;
+				display: flex;
+				align-self: center;
+				justify-content: center;
+				position: absolute;
+				left: 25%;
+			}
+			.mNav-top img {
+				
+			}
+			.mNav-header {
+				display: flex;
+				padding-top: 2.5em;
+				padding-right: 1.5em;
+				padding-left: 1.5em;
+				padding-bottom: 2.5em;
+				align-items: center;
+				position: relative;
+				max-height: 10vh;
+			}
+			.mNav-inner {
+				display: none;
+			}
+			.mNav-inner.visible{
+				text-transform: uppercase;
+				font-weight: 600;
+				background-color: #232323;
+				padding: 1rem 0;
+/*				max-height: 42vw;*/
+				height: 100%;
+				display: block;
+			}
+			
+			
+			.mNav-inner ul {
+				padding-left: 0px;
+			}
+			.mNav-inner li {
+				padding-top: 3.5px;
+				padding-bottom: 3.5px;
 
-@media screen and (max-height: 450px) {
-.overlay {
-	overflow-y: auto;
-}
-.overlay a {
-	font-size: 20px
-}
-.overlay .closebtn {
-	font-size: 40px;
-	top: 15px;
-	right: 35px;
-}
-}
-</style>
+			}
+			.folder-items.hidden {
+				display: none;
+				transition: 2s;
+			}
+			.folder-items.visible {
+				display: block;
+			}
+			.openbtn {
+				display: block;
+				/*				float: left;*/
+				cursor: pointer;
+				vertical-align: middle;
+				left: 5%;
+			}
+
+			.bar1, .bar2, .bar3 {
+				width: 7vw;
+				height: 1vw;
+				background-color: #FFF;
+				margin: 1.2vw 0;
+				transition: 0.4s;
+			}
+
+			/* Rotate first bar */
+			.change .bar1 {
+				-webkit-transform: rotate(-45deg) translate(-1.5558vw, 1.5558vw) ;
+				transform: rotate(-45deg) translate(-1.5558vw, 1.5558vw) ;
+			}
+
+			/* Fade out the second bar */
+			.change .bar2 {
+				opacity: 0;
+			}
+
+			/* Rotate last bar */
+			.change .bar3 {
+				-webkit-transform: rotate(45deg) translate(-1.5558vw, -1.5558vw) ;
+				transform: rotate(45deg) translate(-1.5558vw, -1.5558vw) ;
+			}
+		</style>
 </head>
 <body>
-<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="overlay-content"> <a href="#">About</a> <a href="#">Services</a> <a href="#">Clients</a> <a href="#">Contact</a> </div>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
+	<div class="mobileNav">
+		<div class="mNav-header">
+			<a class="openbtn" href="javascript:void(0);" onclick="toggleNav(this);">
+				<div class="navHamBar bar1"></div>
+				<div class="navHamBar bar2"></div>
+				<div class="navHamBar bar3"></div>
+			</a>
+			<img src="./images/logo-horiz.png" class="mNav-top" alt="logo">
+		</div>
+		<nav class="mNav-inner">
+			<ul class="mNav-items">
+				<li class="mNav-item"><a href="#">Home</a></li>
+				<li class="mNav-item"><a href="#">Sponsors</a></li>
+				<li class="mNav-item"><a href="#">About</a></li>
+				<div class="mNav-folder" id="mNav-folder-teams">
+					<li class="mNav-folder-name">
+						<a class="mNav-folder-name" href="javascript:void(0);" onclick="toggleFolder('mNav-folder-teams');">Teams</a>
+					</li>
+					<div class="folder-items hidden">
+						<li class="mNav-folder-item"><a href="#">FTC 1002</a></li>
+						<li class="mNav-folder-item"><a href="#">FTC 11347</a></li>	
+						<li class="mNav-folder-item"><a href="#">FRC 1002</a></li>
+					</div>
+				</div>
+				<li class="mNav-item"><a href="#">Media</a></li>
+				<li class="mNav-item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			toggleFolder = function (folderId) {
+				var items = $('#' + folderId + '> .folder-items');
+				if($(items[0]).hasClass("hidden")){
+					$(items[0]).addClass("visible").removeClass("hidden");
+				} 
+				else {
+					$(items[0]).addClass("hidden").removeClass("visible");
+				}
+			}
+			toggleNav = function (x) {
+				x.classList.toggle("change");
+				$('.mNav-inner').toggleClass('visible');
+			}
+		});
+			
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
+	</script>
 </body>
 </html>
