@@ -27,9 +27,9 @@
 		<div class="header-inner header-inner-bottom">
 			<div class="bottom-left">
 				<nav class="header-nav header-nav-primary">
-					<a href="../custom.scss/index.html" class="header-nav-item">Home</a>
-					<a href="../custom.scss/sponsors.html" class="header-nav-item">Sponsors</a>
-					<a href="../custom.scss/about.html" class="header-nav-item">About</a>
+					<a href="../index.html" class="header-nav-item">Home</a>
+					<a href="../sponsors.html" class="header-nav-item">Sponsors</a>
+					<a href="../about.html" class="header-nav-item">About</a>
 				</nav>
 			</div>
 			<div class="bottom-center">
@@ -52,6 +52,9 @@
             </div>
 		</div>
 	</header>
+	
+	
+	
 	<div class="mobileNav">
 		<div class="mNav-header">
 			<a class="openbtn" href="javascript:void(0);" onclick="toggleNav(this);">
@@ -82,6 +85,14 @@
 		</nav>
 		
 	</div>
+	
+	<div class="main-heading">
+		<div class="heading-inner">
+			<img src="../images/slide-1.jpg" class="heading-img">			
+			<h2 class="title">From <span class="green">potential</span> to <span class="green">kinetic</span></h2>
+		</div>
+	</div>
+	
 	<div id="section-header">
         <div class="heading">
 			<!-- TemplateBeginEditable name="Heading1" --><h2 style="">Header</h2>
@@ -130,7 +141,7 @@
 	</div>
 -->
 
-    <footer id="Footer">
+    <footer id="Footer" style="position:relative;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
@@ -184,6 +195,7 @@
             </div>
         </div>
     </footer>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../js/script.js"></script>
 </body>

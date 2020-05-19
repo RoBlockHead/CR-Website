@@ -1,54 +1,82 @@
 body {
-  font-family: 'Lato', sans-serif;
+	font-family: Helvetica-Neue, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	color: white;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+/*	height: 100%;*/
+	background-color: #141414;
 }
 
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
+a {
+	text-decoration: none;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+.main-heading {
+	width: 100%;
+	position: relative;
+/*	height: 150px;*/
+/*	justify-content: center;*/
+	margin-bottom: 0px;
+	height: 30vw;
+	display: block;
+}
+.heading-inner{
+	display: flex;
+	height: 30vw;
+	align-items: center;
+	justify-content: center;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.heading-img {
+	display: flex;
+	width: 100%;
+	filter: opacity(.5);
+	position: absolute;
+	z-index: 1;
+	/*	max-height:  30vw;*/
+	height: inherit;
+	object-fit: cover;
+}
+.title {
+	position: absolute;
+	z-index: 2;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 5vw;
+	text-shadow: .0625em 0.0625em 0.05em #232323;
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+}
+.green {
+	color: #0db04b;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.section {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	background-color: #232323;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+h1, h2, h3, h4, h5, h6 {
+	margin: 0em;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+.section-heading {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1.5em;
+/*	font-size: 2.5vw;*/
 }
+
+.section-body {
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 1em;
+}
+
+#footer

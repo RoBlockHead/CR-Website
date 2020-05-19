@@ -1,112 +1,56 @@
 <!doctype html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="./css/style.css" rel="stylesheet">
-   		<link href="./css/smaller.css" rel="stylesheet">
-		<link href="./css/mobile.css" rel="stylesheet">
-		<link href="./css/nav.css" rel="stylesheet">
-		<link href="./scss/custom.css" rel="stylesheet">
-		<link href="./scss/custom.scss">
-		<style>
-			body {
-				font-family: "Helvetica Neue",Arial,sans-serif;
-				font-size: 3vw;
-			}
-			a {
-				text-decoration: none;
-				color: inherit;
-			}
-			.mobileNav {
-/*				display: flex;*/
-				text-align: center;
-				width:100%;
-			}
-			.mNav-top {
-				max-width: 50%;
-				display: flex;
-				align-self: center;
-				justify-content: center;
-				position: absolute;
-				left: 25%;
-			}
-			.mNav-top img {
-				
-			}
-			.mNav-header {
-				display: flex;
-				padding-top: 2.5em;
-				padding-right: 1.5em;
-				padding-left: 1.5em;
-				padding-bottom: 2.5em;
-				align-items: center;
-				position: relative;
-				max-height: 10vh;
-			}
-			.mNav-inner {
-				display: none;
-			}
-			.mNav-inner.visible{
-				text-transform: uppercase;
-				font-weight: 600;
-				background-color: #232323;
-				padding: 1rem 0;
-/*				max-height: 42vw;*/
-				height: 100%;
-				display: block;
-			}
-			
-			
-			.mNav-inner ul {
-				padding-left: 0px;
-			}
-			.mNav-inner li {
-				padding-top: 3.5px;
-				padding-bottom: 3.5px;
 
-			}
-			.folder-items.hidden {
-				display: none;
-				transition: 2s;
-			}
-			.folder-items.visible {
-				display: block;
-			}
-			.openbtn {
-				display: block;
-				/*				float: left;*/
-				cursor: pointer;
-				vertical-align: middle;
-				left: 5%;
-			}
+<head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
 
-			.bar1, .bar2, .bar3 {
-				width: 7vw;
-				height: 1vw;
-				background-color: #FFF;
-				margin: 1.2vw 0;
-				transition: 0.4s;
-			}
-
-			/* Rotate first bar */
-			.change .bar1 {
-				-webkit-transform: rotate(-45deg) translate(-1.5558vw, 1.5558vw) ;
-				transform: rotate(-45deg) translate(-1.5558vw, 1.5558vw) ;
-			}
-
-			/* Fade out the second bar */
-			.change .bar2 {
-				opacity: 0;
-			}
-
-			/* Rotate last bar */
-			.change .bar3 {
-				-webkit-transform: rotate(45deg) translate(-1.5558vw, -1.5558vw) ;
-				transform: rotate(45deg) translate(-1.5558vw, -1.5558vw) ;
-			}
-		</style>
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+<!--	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="./css/bootstrap-grid.css" rel="stylesheet">
+<!--    <link href="./css/style.css" rel="stylesheet">-->
+    <link href="./css/smaller.css" rel="stylesheet">
+    <link href="./css/mobile.css" rel="stylesheet">
+	<link href="./css/nav.css" rel="stylesheet">
+	<link href="./css/responses.css" rel="stylesheet">
+	<link href="./css/test.css" rel="stylesheet">
+<!--	<link href="./scss/custom.css" rel="stylesheet">-->
+	<link href="./scss/custom.scss"> <!--This is just to link the scss for ease of development -->
+	
 </head>
+
 <body>
+	<header class="header">
+		<div class="header-inner header-inner-bottom">
+			<div class="bottom-left">
+				<nav class="header-nav header-nav-primary">
+					<a href="./index.html" class="header-nav-item">Home</a>
+					<a href="./sponsors.html" class="header-nav-item">Sponsors</a>
+					<a href="./about.html" class="header-nav-item">About</a>
+				</nav>
+			</div>
+			<div class="bottom-center">
+				<img src="./images/logo-horiz.png" class="top-logo">
+			</div>
+			<div class="bottom-right">
+                    <nav class="header-nav header-nav-secondary">
+						<span class="header-nav-item-folder">
+							<a href="#" class="header-nav-item">Teams</a>
+							<span class="header-nav-folder">
+								<a href="#" class="header-nav-folder-item">FTC 1002</a>
+								<a href="#" class="header-nav-folder-item">FTC 11347</a>
+								<a href="#" class="header-nav-folder-item">FRC</a>
+								<a href="#" class="header-nav-folder-item">GRITS</a>
+							</span>
+						</span>
+						<a href="#" class="header-nav-item">Media</a>
+						<a href="#" class="header-nav-item">Contact</a>
+				</nav>
+            </div>
+		</div>
+	</header>
+	
 	<div class="mobileNav">
 		<div class="mNav-header">
 			<a class="openbtn" href="javascript:void(0);" onclick="toggleNav(this);">
@@ -137,25 +81,42 @@
 		</nav>
 		
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			toggleFolder = function (folderId) {
-				var items = $('#' + folderId + '> .folder-items');
-				if($(items[0]).hasClass("hidden")){
-					$(items[0]).addClass("visible").removeClass("hidden");
-				} 
-				else {
-					$(items[0]).addClass("hidden").removeClass("visible");
-				}
-			}
-			toggleNav = function (x) {
-				x.classList.toggle("change");
-				$('.mNav-inner').toggleClass('visible');
-			}
-		});
+	
+	<div class="main-heading">
+		<div class="heading-inner">
+			<img src="./images/slide-1.jpg" class="heading-img">			
+			<h2 class="title">From <span class="green">potential</span> to <span class="green">kinetic</span></h2>
+		</div>
+	</div>
+	
+	<div class="section">
+		<div class="section-heading">
+			<h1>Section</h1>
+		</div>
+		<div class="section-body">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget quam vitae tellus rutrum commodo vel quis ante. Nunc congue metus nulla, nec semper velit vestibulum in. Mauris quis neque libero. Suspendisse vehicula risus eu metus feugiat sagittis. Suspendisse vitae vulputate leo. Vivamus tempor turpis ut eros laoreet, vel posuere libero pharetra. Ut velit metus, fermentum sed sapien id, tincidunt condimentum arcu. Nam non elit pharetra, convallis velit at, faucibus est.</p>
+		</div>
+	</div>
+<!--
+	<footer class="footer">
+		<div class="footer-container">
+			<div id="footer-1 row">
+				<div class="col-3">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-2 row">
 			
-
-	</script>
+			</div>
+		</div>
+	</footer>
+-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>
