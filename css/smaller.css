@@ -3,12 +3,13 @@
 
 ;
 
-@media (min-width: 965px) and (max-width: 1500px){
+@media (min-width: 625px){
 	.top-logo {
-		width: 300px;
+		width: 25vw;
 	}
 	
 }
+/*
 @media (min-width: 1150px) {
 	.header-nav{
 		font-size: 20px;
@@ -24,6 +25,7 @@
 		font-size: 11.5px;
 	}
 }
+*/
 
 @media (max-width: 625px) {
 	.header {
